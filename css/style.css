@@ -1,0 +1,111 @@
+@import url('navbar.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.global {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bienvenue {
+    z-index: -3;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 55px);
+    background: url(../img/bienvenue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* .bienvenue h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: max-content;
+    font-size: 40px;
+} */
+
+.bienvenue .slogan {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.bienvenue .slogan h1 {
+    margin: 50px auto;
+    color: white;
+    width: max-content;
+    font-size: 40px;
+}
+
+.bienvenue .slogan img {
+    width: 100%;
+}
+
+.bienvenue .down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    height: 150px;
+    color: white;
+}
+
+.bienvenue .down svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.aaa {
+    height: 100vh;
+    background-color: var(--c-blanc);
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .bienvenue .slogan h1 {
+        font-size: max(5vw, 20px);
+    }
+
+    .bienvenue .slogan {
+        width: 90%;
+    }
+}
