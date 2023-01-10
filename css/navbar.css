@@ -5,9 +5,10 @@
 
 :root {
     --c-blanc: rgb(221, 221, 221);
-    --c-shadow: #2c2c2ce1;
+    --c-shadow: #2c2c2c15;
     --c-bleu: #001d3d;
     --c-lightblue: #003566;
+    --c-gold: #ffe169;
 }
 
 body {

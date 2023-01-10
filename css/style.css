@@ -14,6 +14,23 @@
     user-select: none;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-bleu);
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+    
+*::-webkit-scrollbar-track {
+    background: var(--c-blanc);
+}
+    
+*::-webkit-scrollbar-thumb {
+    background-color: var(--c-bleu);
+}
+
 body {
     width: 100%;
     display: flex;
@@ -21,14 +38,17 @@ body {
 }
 
 .global {
+    flex: 1 0 auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: var(--c-blanc);
+    z-index: -2;
 }
 
 .bienvenue {
-    z-index: -3;
+    z-index: -1;
     position: relative;
     width: 100%;
     display: flex;
@@ -39,16 +59,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-/* .bienvenue h1 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: max-content;
-    font-size: 40px;
-} */
 
 .bienvenue .slogan {
     position: absolute;
@@ -88,9 +98,130 @@ body {
     filter: drop-shadow(5px 5px 5px black);
 }
 
-.aaa {
+.options {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--c-blanc);
+}
+
+.options .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.options .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+.options .titre p span.bold {
+    font-weight: 900;
+    color: var(--c-bleu);
+}
+
+.options .cartes {
+    margin: 20px auto 0;
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+    padding: 1rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.options .cartes .carte {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 800px;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--c-bleu);
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
+}
+
+.options .cartes .sisr {
+    background: url(../img/option-sisr.jpg);
+}
+
+.options .cartes .slam {
+    background: url(../img/option-slam.jpg);
+}
+
+.options .cartes .carte .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+}
+
+.options .cartes .carte .titre p {
+    color: white;
+}
+
+.options .cartes .carte .titre p span {
+    color: var(--c-gold);
+}
+
+.options .cartes .carte .desc {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.situer {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100vh;
     background-color: var(--c-blanc);
+}
+
+.situer .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.situer .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+.situer .titre p span.bold {
+    font-weight: 900;
+    color: var(--c-bleu);
+}
+
+.situer .map {
+    margin: 20px auto 0;
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
+}
+
+.situer .map iframe {
+    width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -98,7 +229,17 @@ body {
 
 
 
+@media (max-width:900px) {
+    .options .cartes {
+        flex-direction: column;
+        padding: 5x;
+    }
 
+    .options .cartes .carte {
+        width: 100%;
+        padding: 5px;
+    }
+}
 
 @media (max-width:800px) {
     .bienvenue .slogan h1 {
