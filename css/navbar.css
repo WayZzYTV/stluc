@@ -1,6 +1,3 @@
-@import url('footer.css');
-
-
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
@@ -9,14 +6,30 @@
     --c-bleu: #001d3d;
     --c-lightblue: #003566;
     --c-gold: #ffbe69;
+    --c-noir: #1a1a1a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-blanc);
     font-family: "Roboto", sans-serif;
     height: auto;
-    background: var(--bluebackground);
 }
 
 .logo {
