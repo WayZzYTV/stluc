@@ -139,7 +139,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     max-width: 800px;
     height: 100%;
     padding: 1rem;
@@ -149,11 +149,17 @@ body {
 }
 
 .options .cartes .sisr {
-    background: url(../img/option-sisr.jpg);
+    background: url(../img/option-sisr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .options .cartes .slam {
-    background: url(../img/option-slam.jpg);
+    background: url(../img/option-slam.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .options .cartes .carte .titre {
@@ -238,7 +244,6 @@ body {
     }
 
     .options .cartes .carte {
-        width: 100%;
         padding: 5px;
     }
 }
