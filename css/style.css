@@ -1,3 +1,8 @@
+@import url('navbar.css');
+@import url('footer.css');
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +15,16 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+
+:root {
+    --c-blanc: rgb(221, 221, 221);
+    --c-shadow: #2c2c2c1d;
+    --c-bleu: #001d3d;
+    --c-lightblue: #003566;
+    --c-gold: #ffbe69;
+    --c-noir: #1a1a1a;
 }
 
 * {
@@ -45,7 +60,6 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--c-blanc);
-    z-index: -2;
 }
 
 .bienvenue {

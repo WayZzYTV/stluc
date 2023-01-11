@@ -1,37 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
-:root {
-    --c-blanc: rgb(221, 221, 221);
-    --c-shadow: #2c2c2c1d;
-    --c-bleu: #001d3d;
-    --c-lightblue: #003566;
-    --c-gold: #ffbe69;
-    --c-noir: #1a1a1a;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--c-blanc);
-    font-family: "Roboto", sans-serif;
-    height: auto;
-}
-
 .logo {
     width: 90px;
 }
