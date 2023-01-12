@@ -20,7 +20,7 @@
 
 :root {
     --c-blanc: rgb(221, 221, 221);
-    --c-shadow: #2c2c2c1d;
+    --c-shadow: #2c2c2c0e;
     --c-bleu: #001d3d;
     --c-lightblue: #003566;
     --c-gold: #ffbe69;
@@ -142,7 +142,7 @@ body {
     font-weight: 400;
 }
 
-.options .titre p span.bold {
+.bold {
     font-weight: 900;
     color: var(--c-bleu);
 }
@@ -240,10 +240,100 @@ body {
     color: black;
     font-weight: 400;
 }
+.anciens .cartes {
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1700px;
+    padding: 1rem;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
-.anciens .titre p span.bold {
-    font-weight: 900;
-    color: var(--c-bleu);
+.anciens .cartes .carte {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+    background-color: var(--c-blanc);
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
+}
+
+.anciens .cartes .carte .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    gap: 30px;
+    position: relative;
+}
+
+.anciens .cartes .carte .titre .avatar {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.anciens .cartes .carte .titre .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.anciens .cartes .carte .titre .right {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.anciens .cartes .carte .titre .nom {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #001D3D;
+}
+
+.anciens .cartes .carte .titre .option {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #2B2A26;;
+}
+
+.anciens .cartes .carte .desc {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.anciens .cartes .carte .sous-titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+
+.anciens .cartes .carte .sous-titre p {
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: #2B2A26;
 }
 
 
@@ -275,11 +365,6 @@ body {
     font-size: 40px;
     color: black;
     font-weight: 400;
-}
-
-.situer .titre p span.bold {
-    font-weight: 900;
-    color: var(--c-bleu);
 }
 
 .situer .map {
