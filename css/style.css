@@ -223,7 +223,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1rem;
     background-color: var(--c-blanc);
 }
 
@@ -268,7 +267,7 @@ body {
     display: flex;
     width: 100%;
     height: 20%;
-    gap: 30px;
+    gap: 10%;
     position: relative;
 }
 
@@ -419,5 +418,33 @@ body {
 
     .bienvenue .slogan {
         width: 90%;
+    }
+}
+
+@media (max-width:460px) {
+    .anciens .cartes .carte .titre .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .anciens .cartes .carte .titre .avatar img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .anciens .cartes .carte .titre .nom {
+        font-size: 25px;
+    }
+    
+    .anciens .cartes .carte .titre .option {
+        font-size: 20px;
+    }
+    
+    .anciens .cartes .carte .desc {
+        font-size: 14px;
+    }
+    
+    .anciens .cartes .carte .sous-titre p {
+        font-size: 20px;
     }
 }
