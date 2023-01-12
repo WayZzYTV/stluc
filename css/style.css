@@ -112,6 +112,14 @@ body {
     filter: drop-shadow(5px 5px 5px black);
 }
 
+
+
+
+
+
+
+
+
 .options {
     margin: 50px auto 0;
     display: flex;
@@ -201,6 +209,50 @@ body {
     color: white;
     text-shadow: 1px 1px 1px black;
 }
+
+
+
+
+
+
+
+
+
+.anciens {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--c-blanc);
+}
+
+.anciens .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.anciens .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+}
+
+.anciens .titre p span.bold {
+    font-weight: 900;
+    color: var(--c-bleu);
+}
+
+
+
+
+
+
+
+
 
 .situer {
     margin: 50px auto 0;
