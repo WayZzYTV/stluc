@@ -73,6 +73,10 @@ footer {
     font-size: 20px;
 }
 
+.media-list a:hover {
+    color: rgb(56, 56, 56);
+}
+
 
 /* Media queries */
 
