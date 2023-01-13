@@ -15,6 +15,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -282,7 +283,6 @@ body {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: bottom;
 }
 
 .anciens .cartes .carte .titre .right {
@@ -293,7 +293,7 @@ body {
 }
 
 .anciens .cartes .carte .titre .nom {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
@@ -301,7 +301,7 @@ body {
 }
 
 .anciens .cartes .carte .titre .option {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -341,10 +341,10 @@ body {
 
 .anciens .cartes .carte .sous-titre p {
     margin: auto;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
     color: #2B2A26;
 }
