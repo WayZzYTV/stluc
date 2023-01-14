@@ -49,6 +49,7 @@ footer {
 .services-list a {
     text-decoration: none;
     color: rgb(102, 102, 102);
+    cursor: pointer;
 }
 .services-list a:hover {
     color: rgb(56, 56, 56);
