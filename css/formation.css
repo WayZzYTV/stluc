@@ -1,0 +1,73 @@
+@import url('navbar.css');
+@import url('footer.css');
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --c-blanc: rgb(221, 221, 221);
+    --c-shadow: #2c2c2c0e;
+    --c-bleu: #001d3d;
+    --c-lightblue: #003566;
+    --c-gold: #ffbe69;
+    --c-noir: #1a1a1a;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--c-bleu);
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+    
+*::-webkit-scrollbar-track {
+    background: var(--c-blanc);
+}
+    
+*::-webkit-scrollbar-thumb {
+    background-color: var(--c-bleu);
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-blanc);
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+
+.global {
+    flex: 1 0 auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--c-blanc);
+}
+
+.domaines {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--c-blanc);
+}
