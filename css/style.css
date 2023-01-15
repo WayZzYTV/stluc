@@ -77,24 +77,25 @@ body {
 }
 
 .bienvenue .slogan {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
     filter: drop-shadow(5px 5px 5px var(--c-shadow));
+    gap: 30px;
     text-align: center;
 }
 
 .bienvenue .slogan h1 {
-    margin: 50px auto;
+    margin: auto;
     color: white;
-    width: max-content;
     font-size: 40px;
 }
 
 .bienvenue .slogan img {
-    width: 100%;
+    margin: auto;
+    width: 90%;
 }
 
 .bienvenue .down {
@@ -455,10 +456,6 @@ body {
 @media (max-width:800px) {
     .bienvenue .slogan h1 {
         font-size: max(5vw, 20px);
-    }
-
-    .bienvenue .slogan {
-        width: 90%;
     }
 }
 
