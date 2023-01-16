@@ -72,6 +72,16 @@ body {
     background-color: var(--c-blanc);
 }
 
+
+
+
+
+
+
+
+
+/* ------------------ CONTENU ------------------- */
+
 .contenu {
     margin: 50px auto 0;
     display: flex;
@@ -80,110 +90,92 @@ body {
     background-color: var(--c-blanc);
 }
 
-::selection{
-    background: rgb(0,123,255,0.3);
-}
-  
-.wrapper{
-    margin: auto;
-    max-width: 600px;
+.contenu .options {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    background-color: var(--c-blanc);
 }
 
-.wrapper .parent-tab,
-.wrapper .child-tab{
-    margin-bottom: 8px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
-}
-  
-.wrapper .parent-tab label,
-.wrapper .child-tab label{
-    background: var(--c-bleu);
-    padding: 10px 20px;
+.contenu .options .titre {
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    border-radius: 3px;
-    position: relative;
-    z-index: 99;
-    transition: all 0.3s ease;
+    width: 100%;
+    padding: 1rem;
 }
-  
-.wrapper .parent-tab label:hover{
-    background: var(--c-lightblue);
+
+.options .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
 }
-  
-.parent-tab input:checked ~ label,
-.child-tab input:checked ~ label{
-    border-radius: 3px 3px 0 0;
-    background: var(--c-lightblue);
+
+.bold {
+    font-weight: 900;
+    color: var(--c-bleu);
 }
-  
-.wrapper label span{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+
+.options .cartes {
+    margin: 20px auto 0;
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+    padding: 1rem;
+    justify-content: center;
+    gap: 20px;
 }
-  
-.wrapper .child-tab label span{
-    font-size: 17px;
+
+.options .cartes .carte {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--c-bleu);
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
 }
-  
-.parent-tab label .icon{
-    position: relative;
-    height: 30px;
-    width: 30px;
-    font-size: 15px;
+
+.options .cartes .sisr {
+    background: url(../img/option-sisr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.options .cartes .slam {
+    background: url(../img/option-slam.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.options .cartes .carte .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+}
+
+.options .cartes .carte .titre p {
+    color: white;
+}
+
+.options .cartes .carte .titre p span {
     color: var(--c-gold);
-    display: block;
-    background: #fff;
-    border-radius: 50%;
 }
-  
-.wrapper .child-tab label .icon{
-    height: 27px;
-    width: 27px;
+
+.options .cartes .carte .desc {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
-  
-.parent-tab label .icon i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-  
-.parent-tab input:checked ~ label .icon i:before,
-.child-tab input:checked ~ label .icon i:before{
-    content: '\f068';
-}
-  
-.wrapper .parent-tab .content,
-.wrapper .child-tab .sub-content{
-    max-height: 0px;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 0 0 3px 3px;
-    transition: all 0.4s ease;
-}
-  
-.parent-tab input:checked ~ .content,
-.child-tab input:checked ~ .sub-content{
-    max-height: 100vh;
-}
-  
-.parent-tab .content p,
-.child-tab .sub-content p{
-    padding: 15px 20px;
-    font-size: 16px;
-}
-  
-.child-tab .sub-content p{
-    font-size: 15px;
-}
-  
-input[type="radio"],
-input[type="checkbox"]{
-    display: none;
-}  
