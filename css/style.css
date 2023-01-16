@@ -442,17 +442,6 @@ body {
 
 
 
-@media (max-width:900px) {
-    .options .cartes {
-        flex-direction: column;
-        padding: 5x;
-    }
-
-    .options .cartes .carte {
-        padding: 5px;
-    }
-}
-
 @media (max-width:800px) {
     .bienvenue .slogan h1 {
         font-size: max(5vw, 20px);
