@@ -72,6 +72,20 @@ body {
     background-color: var(--c-blanc);
 }
 
+.domaines .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.domaines .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+}
+
 
 
 
@@ -88,39 +102,6 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--c-blanc);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.contenu .domaines {
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--c-blanc);
-}
-
-.contenu .domaines .titre {
-    margin: 0 auto;
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-}
-
-.domaines .titre p {
-    margin: auto;
-    font-size: 40px;
-    color: black;
-    font-weight: 400;
 }
 
 .blog-slider {

@@ -84,91 +84,87 @@
 
     <section class="global">
         <div class="domaines" id="domaines">
-            
+            <div class="titre">
+                <p>Les <span class="bold">domaines</span> du <span class="bold">BTS SIO</span></p>
+            </div>
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./img/network.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Systèmes et Réseaux</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./img/code.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Développement</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                        </div>
+                    </div>
+                
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./img/bdd.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Base de données</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./img/cyber.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                            <div class="blog-slider__title">Cybersécurité</div>
+                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./img/cejm.jpg" alt="">
+                        </div>
+                        <div class="blog-slider__content">
+                        <div class="blog-slider__title">Culture Economique, Juridique et Managériale</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="blog-slider__pagination"></div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js%22%3E"></script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+                    
+                var swiper = new Swiper('.blog-slider', {
+                    spaceBetween: 30,
+                    effect: 'fade',
+                    loop: true,
+                    mousewheel: {
+                    invert: false,
+                    },
+                    // autoHeight: true,
+                    pagination: {
+                    el: '.blog-slider__pagination',
+                    clickable: true,
+                    }
+                });
+            </script>
         </div>
 
         <div class="contenu" id="contenu">
-
-            <div class="domaines">
-                <div class="titre">
-                    <p>Les <span class="bold">domaines</span> du <span class="bold">BTS SIO</span></p>
-                </div>
-                <div class="blog-slider">
-                    <div class="blog-slider__wrp swiper-wrapper">
-
-                        <div class="blog-slider__item swiper-slide">
-                            <div class="blog-slider__img">
-                                <img src="./img/network.jpg" alt="">
-                            </div>
-                            <div class="blog-slider__content">
-                                <div class="blog-slider__title">Systèmes et Réseaux</div>
-                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-slider__item swiper-slide">
-                            <div class="blog-slider__img">
-                                <img src="./img/code.jpg" alt="">
-                            </div>
-                            <div class="blog-slider__content">
-                                <div class="blog-slider__title">Développement</div>
-                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                            </div>
-                        </div>
-                    
-                        <div class="blog-slider__item swiper-slide">
-                            <div class="blog-slider__img">
-                                <img src="./img/bdd.jpg" alt="">
-                            </div>
-                            <div class="blog-slider__content">
-                                <div class="blog-slider__title">Base de données</div>
-                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-                            </div>
-                        </div>
-
-                        <div class="blog-slider__item swiper-slide">
-                            <div class="blog-slider__img">
-                                <img src="./img/cyber.jpg" alt="">
-                            </div>
-                            <div class="blog-slider__content">
-                                <div class="blog-slider__title">Cybersécurité</div>
-                                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                            </div>
-                        </div>
-
-                        <div class="blog-slider__item swiper-slide">
-                            <div class="blog-slider__img">
-                                <img src="./img/cejm.jpg" alt="">
-                            </div>
-                            <div class="blog-slider__content">
-                            <div class="blog-slider__title">Culture Economique, Juridique et Managériale</div>
-                            <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class="blog-slider__pagination"></div>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js%22%3E"></script>
-                <script type="module">
-                    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-                        
-                    var swiper = new Swiper('.blog-slider', {
-                        spaceBetween: 30,
-                        effect: 'fade',
-                        loop: true,
-                        mousewheel: {
-                        invert: false,
-                        },
-                        // autoHeight: true,
-                        pagination: {
-                        el: '.blog-slider__pagination',
-                        clickable: true,
-                        }
-                    });
-                </script>
-            </div>
             
             <div class="options" id="options">
                 <div class="titre">
