@@ -175,10 +175,16 @@ body {
     display: flex;
     width: 100%;
     padding: 1rem;
+    font-size: 20px;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 1px black;
 }
+
+
+
+
+
 
 
 
@@ -254,8 +260,13 @@ body {
     flex-direction: column;
     width: 100%;
     padding: 1rem;
+    font-size: 20px;
     color: white;
     text-shadow: 1px 1px 1px black;
+}
+
+.forme .cartes .carte .desc p span {
+    color: var(--c-gold);
 }
 
 
