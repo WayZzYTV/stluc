@@ -639,6 +639,15 @@ body {
     .forme .cartes .carte {
         padding: 5px;
     }
+
+    .referentiel .cartes {
+        flex-direction: column;
+        padding: 5x;
+    }
+
+    .referentiel .cartes .carte {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 850px) {
