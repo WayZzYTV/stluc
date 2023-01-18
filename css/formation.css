@@ -490,6 +490,130 @@ body {
 
 
 
+
+.referentiel {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--c-blanc);
+}
+
+.referentiel .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.referentiel .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+}
+
+.referentiel .cartes {
+    margin: 20px auto 0;
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    padding: 1rem;
+    justify-content: center;
+    gap: 20px;
+}
+
+.referentiel .cartes .carte {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--c-bleu);
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
+}
+
+.referentiel .cartes .carte .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+}
+
+.referentiel .cartes .carte .titre p {
+    color: white;
+}
+
+.referentiel .cartes .carte .titre p span {
+    color: var(--c-gold);
+}
+
+.referentiel .cartes .carte .desc {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+.conditions {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--c-blanc);
+}
+
+.conditions .titre {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.conditions .titre p {
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+}
+
+.conditions .carte {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--c-bleu);
+    box-shadow: 10px 5px 10px 10px var(--c-shadow), -10px -5px 10px 10px var(--c-shadow);
+    border-radius: 5px;
+}
+
+.conditions .carte .titre h3 {
+    color: white;
+}
+
+.conditions .carte .titre h3 span {
+    color: var(--c-gold);
+}
+
+
+
+
+
 @media screen and (max-width: 992px) {
     .blog-slider {
       max-width: 680px;
