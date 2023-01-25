@@ -732,3 +732,9 @@ margin: auto;
     }
 }
 
+@media screen and (max-width:400px) {
+    .referentiel .cartes .carte .desc {
+        flex-direction: column;
+    }
+}
+
