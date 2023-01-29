@@ -721,6 +721,27 @@ margin: auto;
         height: 11px;
         width: 30px;
     }
+
+    .domaines .titre p {
+        font-size: max(5vw,20px);
+    }
+
+    .options .titre p {
+        font-size: max(5vw,20px);
+    }
+
+    .forme .titre p {
+        font-size: max(5vw,20px);
+    }
+
+    .referentiel .titre p {
+        font-size: max(5vw,20px);
+    }
+
+    .conditions .titre p {
+        font-size: max(4vw,20px);
+        text-align: center;
+    }
 }
   
 @media screen and (max-width: 576px) {
